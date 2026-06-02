@@ -7,6 +7,10 @@
 
 It ships with a **pre-configured Capawesome Cloud app**, so live updates work out of the box — no account or setup required. Just install the app and try it.
 
+<p align="center">
+  <img src=".github/assets/screenshot.png" alt="The demo app running on iOS, showing the v1 bundle badge and the live update status card" width="320" />
+</p>
+
 ## Features
 
 - 📦 **Over-the-air updates** — ship new web bundles without an app store release.
