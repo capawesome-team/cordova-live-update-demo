@@ -1,0 +1,42 @@
+{
+  "name": "cordova-live-update-demo",
+  "displayName": "Live Update Demo",
+  "version": "1.0.0",
+  "description": "A simple Cordova app demonstrating Capacitor Live Updates.",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "android": "cordova run android",
+    "ios": "cordova run ios"
+  },
+  "keywords": [
+    "ecosystem:cordova"
+  ],
+  "author": "Robin Genz",
+  "license": "MIT",
+  "devDependencies": {
+    "@capawesome/cordova-live-update": "^0.1.0",
+    "cordova": "^13.0.0",
+    "cordova-android": "^15.0.0",
+    "cordova-ios": "^8.0.0"
+  },
+  "cordova": {
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "plugins": {
+      "@capawesome/cordova-live-update": {
+        "APP_ID": "1f3f8c0d-f220-460e-ac50-41269de3a105",
+        "READY_TIMEOUT": "10000",
+        "AUTO_BLOCK_ROLLED_BACK_BUNDLES": "true",
+        "DEFAULT_CHANNEL": " ",
+        "AUTO_UPDATE_STRATEGY": "none",
+        "HTTP_TIMEOUT": "60000",
+        "PUBLIC_KEY": " ",
+        "SERVER_DOMAIN": "api.cloud.capawesome.io",
+        "AUTO_DELETE_BUNDLES": "false"
+      }
+    }
+  }
+}

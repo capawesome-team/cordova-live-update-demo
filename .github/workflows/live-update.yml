@@ -1,0 +1,34 @@
+name: Live Update
+
+on:
+  push:
+    branches:
+      - main
+    paths-ignore:
+      - "**/*.md"
+  workflow_dispatch:
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+
+      - name: Bump bundle label to v2
+        run: sed -i "s/const BUNDLE_LABEL = 'v1';/const BUNDLE_LABEL = 'v2';/" www/js/index.js
+
+      - name: Upload live update bundle
+        env:
+          CAPAWESOME_CLOUD_TOKEN: ${{ secrets.CAPAWESOME_CLOUD_TOKEN }}
+        run: >
+          npx @capawesome/cli apps:liveupdates:upload
+          --app-id 1f3f8c0d-f220-460e-ac50-41269de3a105
+          --path www
+          --channel default
+          --yes

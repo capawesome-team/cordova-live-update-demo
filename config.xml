@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="io.ionic.starter" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>Live Update Demo</name>
+    <description>A simple Cordova app demonstrating Capacitor Live Updates.</description>
+    <author email="mail@robingenz.dev" href="https://capawesome.io">Robin Genz</author>
+    <content src="index.html" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <access origin="*" />
+    <preference name="DisallowOverscroll" value="true" />
+    <platform name="android">
+        <edit-config file="app/src/main/AndroidManifest.xml" mode="merge" target="/manifest/application">
+            <application android:usesCleartextTraffic="true" />
+        </edit-config>
+    </platform>
+    <platform name="ios">
+        <edit-config file="*-Info.plist" mode="merge" target="NSAppTransportSecurity">
+            <dict>
+                <key>NSAllowsLocalNetworking</key>
+                <true />
+            </dict>
+        </edit-config>
+        <privacy-manifest>
+            <key>NSPrivacyAccessedAPITypes</key>
+            <array>
+                <dict>
+                    <key>NSPrivacyAccessedAPIType</key>
+                    <string>NSPrivacyAccessedAPICategoryUserDefaults</string>
+                    <key>NSPrivacyAccessedAPITypeReasons</key>
+                    <array>
+                        <string>CA92.1</string>
+                    </array>
+                </dict>
+            </array>
+        </privacy-manifest>
+    </platform>
+</widget>
