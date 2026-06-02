@@ -2,7 +2,7 @@
   "name": "cordova-live-update-demo",
   "displayName": "Live Update Demo",
   "version": "1.0.0",
-  "description": "A simple Cordova app demonstrating Capacitor Live Updates.",
+  "description": "A simple Cordova app demonstrating Cordova Live Updates.",
   "main": "index.js",
   "private": true,
   "scripts": {
