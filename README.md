@@ -3,7 +3,7 @@
 [![Live Update](https://github.com/capawesome-team/cordova-live-update-demo/actions/workflows/live-update.yml/badge.svg)](https://github.com/capawesome-team/cordova-live-update-demo/actions/workflows/live-update.yml)
 [![Native Build](https://github.com/capawesome-team/cordova-live-update-demo/actions/workflows/native-build.yml/badge.svg)](https://github.com/capawesome-team/cordova-live-update-demo/actions/workflows/native-build.yml)
 
-⚡️ A simple Apache Cordova app that demonstrates the [Cordova Live Update plugin](https://capawesome.io/plugins/live-update/).
+⚡️ A simple Apache Cordova app that demonstrates the [Cordova Live Update plugin](https://capawesome.io/sdks/cordova/live-update/).
 
 It ships with a **pre-configured Capawesome Cloud app**, so live updates work out of the box — no account or setup required. Just install the app and try it.
 
