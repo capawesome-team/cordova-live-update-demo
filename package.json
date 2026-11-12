@@ -15,7 +15,7 @@
   "author": "Robin Genz",
   "license": "MIT",
   "devDependencies": {
-    "@capawesome/cordova-live-update": "github:capawesome-team/cordova-live-update#147f66f9f69397d94ba4944c64c1d84670c01488",
+    "@capawesome/cordova-live-update": "^0.1.1",
     "cordova": "^13.0.0",
     "cordova-android": "^14.0.1",
     "cordova-ios": "^8.0.0"
